@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raj Kumar Chaudhary - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-9yYm8G+jq99fx3M8cyzLM/GkJvP28EU5Z4PfU6DJ3CahNAAej4mlh+lz1VpnbOED2d+M0XGnZ7sHgBAK9gLZUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body and container */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #1e1e1e;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #64ffda;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* opacity: 0.3; */
+  margin-bottom: 15px;
+  filter: grayscale(20%);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #64ffda;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Paragraphs */
+p {
+  color: #cfd8dc;
+  margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "✔ ";
+  color: #64ffda;
+  margin-right: 8px;
+}
+
+/* Section padding */
+section {
+  padding: 60px 0;
+}
+
+/* Project/Experience/Education Box */
+.project {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #64ffda;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  color: #ffffff;
+}
+
+/* Links */
+a {
+  color: #64ffda;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #82f2e5;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #eee;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #64ffda;
+  color: #121212;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3ad5b8;
+}
+
+#form-response {
+  margin-top: 10px;
+  color: #64ffda;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: #b0bec5;
+}
+
+/* Social icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-link {
+  color: #b0bec5;
+  font-size: 1.8rem;
+  margin: 0 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #64ffda;
+  transform: scale(1.3);
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container fade-in">
+            <img src="PP.jpeg" alt="Raj Kumar Chaudhary" class="profile-img" />
+            <h1>Raj Kumar Chaudhary</h1>
+            <p>Aspiring Software Developer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container fade-in">
+            <h2>About Me</h2>
+            <p>
+                I’m a BCA student passionate about web development, data analysis, and design. I enjoy building
+                user-friendly websites and exploring new technologies. With hands-on experience in academic and
+                real-world projects, I strive to solve problems creatively and communicate effectively. I’m continuously
+                exploring tools like SPSS, Adobe Photoshop, and modern AI tools to enhance my skills.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container fade-in">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>SPSS, Photoshop</li>
+                <li>MS Office</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+                <li>Leadership</li>
+                <li>Effective Communication</li>
+                <li>Problem Solving</li>
+                <li>AI Tools</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container fade-in">
+            <h2>Experience</h2>
+            <div class="project">
+                <h3>Messenger Intern – Liberty Micro Life Insurance</h3>
+                <p>
+                    Handled bank cheque deposits and financial transactions promptly while maintaining accurate logs of
+                    deliveries, deposits, and collections. Organized office supplies inventory and collaborated with the
+                    operations team to ensure efficient scheduling and routing of deliveries. Delivered important
+                    documents and packages to clients and stakeholders, ensuring timely distribution of insurance
+                    policies and claim forms. Collected premium payments and assisted in gathering necessary documents
+                    for insurance claims. Provided professional customer service, addressed client inquiries, maintained
+                    confidentiality, and coordinated communication across departments. Supported administrative tasks
+                    such as filing, organizing documents, and data entry, while upholding a professional appearance and
+                    representing the company with integrity.
+
+                    .<br />
+                    <strong>Duration:</strong> March 30, 2025 – May 15, 2025
+                </p>
+            </div>
+            <div class="project">
+                <h3>Intern – Gyan Deep College</h3>
+                <p>
+                    Assisted with student form filling on the Tribhuvan University (TU) portal.<br />
+                    Gained experience in online systems and educational form handling.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container fade-in">
+            <h2>Education</h2>
+            <div class="project">
+                <h3>+2 (Management with Computer Science)</h3>
+                <p>Himal Academy, Tulsipur-6, Dang (2021–2023)</p>
+            </div>
+            <div class="project">
+                <h3>Bachelor in Computer Application (BCA)</h3>
+                <p>Gyan Deep College, Tulsipur-6, Dang (Running – 4th Semester)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container fade-in">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Responsive eCommerce Website</h3>
+                <p>Built using HTML, CSS, JavaScript, and Bootstrap. Features product listings, cart, and responsive
+                    design.</p>
+            </div>
+            <div class="project">
+                <h3>Nepali News Aggregator</h3>
+                <p>A GSAP-animated website showing top headlines from Nepali news portals using HTML, CSS, and JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container fade-in">
+            <h2>Contact</h2>
+            <form class="contact-form" id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="form-response"></p>
+            </form>
+            <p>Email: <a href="mailto:mrbholuchy@gmail.com">mrbholuchy@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/raj-kumar-chaudhary" target="_blank">Visit Profile</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container fade-in">
+            <p>&copy; 2025 Raj Kumar Chaudhary</p>
+            <p>Address: Tulsipur 11, Sukaura, Dang</p>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@volugamer" target="_blank" class="social-link"><i
+                        class="fab fa-youtube"></i>YouTube</a>
+                <a href="https://www.linkedin.com/in/raj-kumar-chaudhari-67366b313/?trk=opento_sprofile_details" target="_blank" class="social-link"><i
+                        class="fab fa-linkedin"></i>Linkedin</a>
+                <a href="https://www.instagram.com/chybholu3?utm_source=qr&igsh=MTBxZ3U0bG9kNnFoYQ==" target="_blank" class="social-link"><i
+                        class="fab fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+     <script>
+        const form = document.getElementById('contact-form');
+const response = document.getElementById('form-response');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const message = form.message.value.trim();
+
+  if (!name || !email || !message) {
+    response.textContent = 'Please fill in all fields.';
+    response.style.color = 'red';
+    return;
+  }
+
+  // Simulate form submission
+  response.textContent = `Thank you for contacting me, ${name}! I'll get back to you soon.`;
+  response.style.color = '#64ffda';
+
+  form.reset();
+});
+
+     </script>
+</body>
+
+</html>
